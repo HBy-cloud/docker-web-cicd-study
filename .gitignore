@@ -1,0 +1,7 @@
+@"
+.env
+*.pem
+*.tfvars
+*.tfstate
+*.tfstate.*
+"@ | Set-Content -Encoding utf8 .gitignore
