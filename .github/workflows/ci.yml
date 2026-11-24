@@ -1,5 +1,4 @@
- @"
-    name: Docker Build CI
+name: Docker Build CI
 
     on:
       push:
@@ -16,4 +15,3 @@
 
           - name: Build Docker image
             run: docker build -t my-web:ci .
-    "@ | Set-Content -Encoding utf8 .github\workflows\ci.yml
