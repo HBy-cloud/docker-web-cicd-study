@@ -9,10 +9,9 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
 
-    stops:
+    steps:
       - name: Checkout repository
         uses: actions/Checkout@v4
 
       - name: Build Docker image
         run: docker build -t my-web-ci .
-        
